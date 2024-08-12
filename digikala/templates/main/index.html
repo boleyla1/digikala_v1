@@ -238,12 +238,15 @@
     <div id="slider" class="flex transition-transform duration-500 ease-out">
       <!-- Slide 1 -->
 
-      	<div class="flex-shrink-0 w-full">
+      {% for Sl_Item in Slider_Item %}
+      		<div class="flex-shrink-0 w-full">
         <img
-          src="https://dkstatics-public.digikala.com/digikala-adservice-banners/39a9f02f631f0341eced2f4c85cb06eb181f6544_1722844429.jpg?x-oss-process=image/quality,q_95/format,webp"
+          src="{{ Sl_Item.Image.url }}"
           alt="Slide 1" class="w-full h-96  object-cover">
       </div>
 
+      {% endfor %}
+      
 
       <!-- Slide 2 -->
 
