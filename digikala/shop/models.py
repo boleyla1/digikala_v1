@@ -1,5 +1,4 @@
 from django.db import models
-from django.db import models
 import datetime
 from django.core.validators import MaxValueValidator, MinValueValidator
 
@@ -41,7 +40,7 @@ class Order(models.Model):
     Product = models.ForeignKey(Product, on_delete=models.CASCADE)
     Customer = models.ForeignKey(Customer, on_delete=models.CASCADE)
     Quantity = models.IntegerField(default=1)
-    Adress = models.CharField(max_length=200, blank=False)
+    Address = models.CharField(max_length=200, blank=False)
     Phone = models.CharField(max_length=20, blank=True)
     Date = models.DateField(default=datetime.date.today)
     Status = models.BooleanField(default=False)
@@ -54,11 +53,10 @@ class SliderItem(models.Model):
     Image = models.ImageField(upload_to='upload/slider/')
 
 
-
-
 class News(models.Model):
     Title = models.CharField(max_length=30)
     Image = models.ImageField(upload_to='upload/news/', default='')
+
     def __str__(self):
         return self.Title
 
