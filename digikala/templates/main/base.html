@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="{% static 'output.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="stylesheet" href="{% static 'media.css' %}">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="shortcut icon"
+    href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAATlBMVEXtGzTtDi3sABzxYGzxa3bsACHxZXDsABrsACT2qrD////zfIbsABHyd4H3sLX6y87vS1rvRFT+9PX83uDtCSruJz384ePuLEHtGDLzho5vvgwrAAAAa0lEQVR4AWKgBhgFgPLm4gBAKAQAKNj+7th/ULt1A9+JBvE7nhVlVe9x3TTttdf1hFCGc4iMEyK6S7MmE6lY2zIl5/jaRE1mxlqzBOr21XlLDiE6uEmMb21LWYIn16Ym5wZaB18SOocJ/mcEaYwEx1NEBKQAAAAASUVORK5CYII=">
+
+</head>
+<body style="background-color: white; font-family: abolfazl; user-select: none;">
+
+{% block content %}{% endblock %}
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="{% static 'jquery-3.7.1.js.js' %}"></script>
+  <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
